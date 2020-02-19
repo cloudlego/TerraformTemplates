@@ -51,7 +51,7 @@ resource "aws_instance" "web" {
     log_to_file             = true
     fetch_chef_certificates = true
     node_name               = "client1"
-    server_url              = "https://ec2-54-89-95-15.compute-1.amazonaws.com/organizations/cloudlego"
+    server_url              = "https://chefurl/organizations/cloudlego"
     recreate_client         = true
     run_list                = [""]
     user_name               = "legoadmin"
